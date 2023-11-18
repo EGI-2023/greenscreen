@@ -1,38 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Green$creen: Vehicle Emission Monitoring and Red Carbon Rating System
+
+## Overview
+
+Green$creen is an open-source project developed for the ETHGlobal Istanbul Hackathon. It focuses on monitoring and analyzing vehicle emissions using sensors such as MQ135 and SHT10, combined with controllers like ESP32. The system provides real-time emission data, calculates a Red Carbon Rating, and securely stores the information on the Ethereum blockchain.
+
+## Features
+
+- **Sensor Integration**: Green$creen supports popular environmental sensors like MQ135 and SHT10, providing accurate measurements of air quality and temperature.
+  
+- **Controller Compatibility**: The project is designed to seamlessly work with ESP32 controllers, ensuring efficient data collection and processing.
+
+- **Real-time Monitoring**: Green$creen offers real-time monitoring of vehicle emissions, enabling instant analysis and reporting.
+
+- **Ethereum Blockchain Integration**: All emission data is securely stored on the Ethereum blockchain, ensuring transparency and immutability.
+
+- **Red Carbon Rating Calculation**: The system calculates a Red Carbon Rating based on the emission data, offering a standardized measure of a vehicle's environmental impact.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Install [Arduino IDE](https://www.arduino.cc/en/software) for ESP32 development.
+- Set up the necessary libraries for MQ135 and SHT10 sensors.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the Green$creen repository:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+   ```bash
+   git clone https://github.com/your-username/green$creen.git
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+2. Open the Arduino IDE and load the Green$creen project.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Configure the project with your Ethereum wallet address and other necessary parameters.
 
-## Learn More
+4. Upload the code to your ESP32 controller.
 
-To learn more about Next.js, take a look at the following resources:
+### Usage
+1. Connect the MQ135 and SHT10 sensors to the ESP32 controller as per the provided schematics.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Power on the system and let it start monitoring vehicle emissions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. The data will be securely pushed to the Ethereum blockchain.
 
-## Deploy on Vercel
+4. Access the Red Carbon Rating through the provided interface or query the blockchain.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
