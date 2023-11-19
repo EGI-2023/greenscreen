@@ -43,9 +43,9 @@ export default function Home() {
     if (isConnected) {
     if (isRegistered) {
       return (
-        <div>
+        <div className="">
         <br />
-        <p className='text-lg'>Welcome back! Your current Red Carbon Credits are: {Number(balance)}</p>
+        <p className='text-lg text-black'>Welcome back! Your current Red Carbon Credits are: {Number(balance)}</p>
         </div>
       )
     }
@@ -70,16 +70,31 @@ export default function Home() {
 
   return (
     <div>
-      <div className="hero min-h-screen" style={{ backgroundImage: 'url(/bg.png)' }}>
-        <div className="hero-overlay bg-opacity-70"></div>
-        <div className="hero-content text-center">
-          <div className="max-w-md">
-            <h1 className=" text-5xl font-bold">Green$creen</h1>
-            <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <div className=" bg-gradient-to-r from-green-400 to-lime-300 via-emerald-400 min-h-screen">
+      <div className="animate-bounce hover:scale-150 transition translate-y-12 translate-x-24 delay-700 duration-700">
+          <Image 
+            src="/head-earth.png"
+            alt="Rotating Earth"
+            width={400} 
+            height={400} 
+          />
+        </div>
+        <div className="hero-content text-center flex flex-row">
+          <div className="max-w-md -mt-32">
+            <h1 className=" text-7xl font-bold text-black">Green$creen</h1>
+            <br />
+            <p className="mb-5 bg-gradient-to-r from-cyan-400 to-cyan-500 via-blue-400 rounded-md border-2 border-stone-900 p-8 text-black text-justify shadow-lg">Green$creen combines IoT and blockchain to accurately track vehicle emissions, minting RED tokens as 'environmental debt'. This groundbreaking approach promotes transparency and incentivizes emission reduction, reshaping carbon management.</p>
             <button onClick={() => open()} className="btn btn-glass">
               {isConnected ? formatAddress(address) : "Connect Wallet"}
             </button>
             {renderButton()}
+            <Image 
+            src="/red1600px.png"
+            alt="Rotating Earth"
+            width={400} 
+            height={400} 
+            className="mt-4"
+          />
 
           </div>
         </div>

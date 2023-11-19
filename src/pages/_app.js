@@ -7,12 +7,12 @@ import { createWeb3Modal, defaultConfig } from '@web3modal/ethers5/react'
 const projectId = 'ceb53595786d0b547255c1fb23c958f7'
 
 // 2. Set chains
-const mainnet = {
+const sepolia = {
   chainId: 80001,
-  name: 'Mumbai',
-  currency: 'MATICMUM',
-  explorerUrl: 'https://mumbai.polygonscan.com/',
-  rpcUrl: 'https://rpc.ankr.com/polygon_mumbai'
+  name: 'sepolia',
+  currency: 'sepolia',
+  explorerUrl: 'https://sepolia.etherscan.io/',
+  rpcUrl: 'https://ethereum-sepolia.publicnode.com'
 }
 
 // 3. Create modal
@@ -25,7 +25,7 @@ const metadata = {
 
 createWeb3Modal({
   ethersConfig: defaultConfig({ metadata }),
-  chains: [mainnet],
+  chains: [sepolia],
   projectId,
     //...
     themeVariables: {
