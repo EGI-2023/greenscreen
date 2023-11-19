@@ -83,7 +83,7 @@ export default function Home() {
           <div className="max-w-md -mt-32">
             <h1 className=" text-7xl font-bold text-black">Green$creen</h1>
             <br />
-            <p className="mb-5 bg-gradient-to-r from-cyan-400 to-cyan-500 via-blue-400 rounded-md border-2 border-stone-900 p-8 text-black text-justify shadow-lg">Green$creen combines IoT and blockchain to accurately track vehicle emissions, minting RED tokens as 'environmental debt'. This groundbreaking approach promotes transparency and incentivizes emission reduction, reshaping carbon management.</p>
+            <p className="mb-5 bg-gradient-to-r from-cyan-400 to-cyan-500 via-blue-400 rounded-md border-2 border-stone-900 p-8 text-black text-justify shadow-lg">Green$creen combines IoT and blockchain to accurately track vehicle emissions, minting RED tokens as &apos;environmental debt&apos;. This groundbreaking approach promotes transparency and incentivizes emission reduction, reshaping carbon management.</p>
             <button onClick={() => open()} className="btn btn-glass">
               {isConnected ? formatAddress(address) : "Connect Wallet"}
             </button>
